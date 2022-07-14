@@ -1,1 +1,36 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&display=swap');
+
+:root {
+  --title-primary-color: #d41443;
+  --title-second-color: #ffffff;
+  --title-third-color: #ffa5ba;
+  --text-primary-color: #000000;
+  --text-second-color: #907e82;
+  --text-third-color: #ffa5ba;
+  --bg-primary-color: #ffffff;
+  --bg-second-color: #fff5f6;
+  --bg-third-color: #ffb8ca;
+  --bg-menu-color: #e17992;
+  --card-one-bg-color: #ffb8ca;
+  --card-two-bg-color: #f0d1a5;
+  --card-three-bg-color: #c2e297;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
