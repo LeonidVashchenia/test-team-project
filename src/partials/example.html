@@ -35,3 +35,20 @@
 
 <!-- <div class="background"></div>
 </article> -->
+<section class="hero">
+  <div class="container hero__container">
+    <picture>
+      <source srcset="/src/images/hero/desk/icecream-desk.png 1x, /src/images/hero/desk/icecream-desk-2x.png 2x"
+        @media="(min-width:$desktop)" />
+      <source srcset="/src/images/hero/tab/icecream-tab.png 1x, /src/images/hero/tab/icecream-tab-2x.png 2x"
+        @media="(min-width:$tablet)" />
+      <source srcset="/src/images/hero/mob/icecream-mob.png 1x, /src/images/hero/mob/icecream-mob-2x.png 2x"
+        @media="(min-width:$telephone)" />
+      <img class="hero__image" src="/src/images/hero/mob/icecream-mob.png" alt="ice cream" width="171" height="410">
+    </picture>
+    <div class="hero__elipse"></div>
+    <h1 class="hero__title">ice cream made with <span class="hero__title hero__title--accent">passion</span> </h1>
+    <a href="#products-feature" class="hero__link">Products</a>
+    <a href="#about__title" class="hero__link hero__link--reserve">How it&#39;s made?</a>
+  </div>
+</section>
